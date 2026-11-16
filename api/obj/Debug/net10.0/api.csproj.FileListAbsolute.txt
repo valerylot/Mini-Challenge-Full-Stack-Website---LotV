@@ -31,3 +31,4 @@
 /Users/valerylot/Desktop/CodeStack Level 2/Homework/Mini Challenge Full Stack Website - LotV/api/obj/Debug/net10.0/api.pdb
 /Users/valerylot/Desktop/CodeStack Level 2/Homework/Mini Challenge Full Stack Website - LotV/api/obj/Debug/net10.0/api.genruntimeconfig.cache
 /Users/valerylot/Desktop/CodeStack Level 2/Homework/Mini Challenge Full Stack Website - LotV/api/obj/Debug/net10.0/ref/api.dll
+/Users/valerylot/Desktop/CodeStack Level 2/Homework/Mini Challenge Full Stack Website - LotV/api/obj/Debug/net10.0/api.sourcelink.json

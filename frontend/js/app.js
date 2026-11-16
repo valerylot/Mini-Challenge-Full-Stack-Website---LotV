@@ -19,6 +19,7 @@ const comparingNumbersForm = document.getElementById("comparing-numbers-form");
 const numThree = document.getElementById("num3");
 const numFour = document.getElementById("num4");
 const comparingNumbersOutput = document.getElementById("comparing-numbers-output");
+const comparingNumbersOutputTwo = document.getElementById("comparing-numbers-output-2");
 
 //-----functions-----
 const comparingFetch = async (numThree, numFour) => {
@@ -69,7 +70,7 @@ if(helloForm){
 
         const output = await sayHelloFetch(username.value);
 
-        helloOutput.textContent = `Hello ${username.value}`;
+        helloOutput.textContent = output.message;
 
         username.value = "";
     })
@@ -95,6 +96,7 @@ if(comparingNumbersForm){
         const output = await comparingFetch(numThree.value, numFour.value);
 
         comparingNumbersOutput.textContent = `${output.message} `;
+        comparingNumbersOutputTwo.textContent = `${output.message2} `;
 
         numThree.value = "";
         numFour.value = "";

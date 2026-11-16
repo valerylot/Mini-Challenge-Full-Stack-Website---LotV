@@ -13,14 +13,14 @@ namespace api.Controllers
         {
             if(numThree > numFour)
             {
-                return Ok( new { Message = $"{numThree} is greater than {numFour}. {numFour} is less than {numThree}." });
+                return Ok( new { Message = $"{numThree} is greater than {numFour}.", Message2 = $"{numFour} is less than {numThree}." });
             }else if(numThree < numFour)
             {
-                return Ok( new { Message = $"{numThree} is less than {numFour}. {numFour} is greater than {numThree}." });
+                return Ok( new { Message = $"{numThree} is less than {numFour}.", Messsage2 = $"{numFour} is greater than {numThree}." });
             }
             else
             {
-                return Ok ( new { Message = $"{numThree} is equal to {numFour}." });
+                return Ok ( new { Message = $"{numThree} is equal to {numFour}.", Message2 = $"{numFour} is equal to {numThree}." });
             }
         }
     }
