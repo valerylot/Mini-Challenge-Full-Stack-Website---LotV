@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater than or Less than</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-red-300 text-white">
+    <header class="p-5">
+        <nav>
+            <a href="/frontend" class="hover:underline">Home</a> |
+            <a href="/frontend/sayhello.html" class="hover:underline">Say Hello</a> |
+            <a href="/frontend/adding2numbers.html" class="hover:underline">Adding 2 Numbers</a> |
+            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a>
+        </nav>
+    </header>
+
+    <h1 class="text-6xl text-center mx-auto">Comparing 2 Numbers</h1>
+
+    <form id="comparing-numbers-form" action="submit" class="text-center p-4 flex flex-col items-center gap-4">
+        <label class="text-3xl">Enter A Number:</label>
+        <input type="number" id="num3" name="num3" class="w-50 border-3 rounded-md p-1 text-2xl" required>
+        <label class="text-3xl">Enter Another Number:</label>
+        <input type="number" id="num4" name="num4" class="w-50 border-3 rounded-md p-1 text-2xl" required>
+        <button type="submit" id="submit-comparing-numbers" class="w-40 border-3 rounded-md p-1 text-2xl">Compare</button>
+    </form>
+
+    <p id="comparing-numbers-output" class="text-3xl text-center"></p>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

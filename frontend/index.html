@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick A Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-red-300 text-white">
+    <header class="p-5">
+        <nav>
+            <a href="/frontend" class="hover:underline">Home</a> |
+            <a href="/frontend/sayhello.html" class="hover:underline">Say Hello</a> |
+            <a href="/frontend/adding2numbers.html" class="hover:underline">Adding 2 Numbers</a> |
+            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a>
+        </nav>
+    </header>
+
+    <h1 class="text-6xl text-center mx-auto">Pick A Game</h1>
+    <div class="flex flex-col items-center gap-4 m-4">
+    <button id="say-hello-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Say Hello</button>
+    <button id="adding-numbers-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Adding 2 Numbers</button>
+    <button id="comparing-numbers-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Greater than or Less than</button>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

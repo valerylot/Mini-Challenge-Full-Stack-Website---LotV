@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rTSHJ+CKvxc=",
+  "success": true,
+  "projectFilePath": "/Users/valerylot/Desktop/CodeStack Level 2/Homework/Mini Challenge Full Stack Website - LotV/api/api.csproj",
+  "expectedPackageFiles": [
+    "/Users/valerylot/.nuget/packages/microsoft.aspnetcore.openapi/10.0.11/microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "/Users/valerylot/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
