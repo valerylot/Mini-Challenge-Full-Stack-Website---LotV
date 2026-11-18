@@ -10,3 +10,6 @@ Your folders are very well organized. Each page, js, and the controllers are all
 On your helloForm event listener you never use your output variable. You call the value instead. The assignment wants us reaching into the controller to get the value. The rest are correct.
 
 Controllers look great. Maybe include a second statment for equal two. Num1 is qual to num 2, num 2 is equal to num1. 
+
+//Reviewer 2: Zionn Showers
+//Peer Review: Everything works pretty good. I like that you added a navigation bar on top. Good job!!
