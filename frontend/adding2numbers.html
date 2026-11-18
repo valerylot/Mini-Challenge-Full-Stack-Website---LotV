@@ -10,21 +10,24 @@
 </head>
 
 <body class="bg-red-300 text-white">
-    <header class="p-5">
-        <nav>
+    <header class="md:text-sm lg:text-lg p-5 text-center">
+        <nav class="lg:flex gap-4 justify-center">
             <a href="/frontend" class="hover:underline">Home</a> |
             <a href="/frontend/sayhello.html" class="hover:underline">Say Hello</a> |
             <a href="/frontend/adding2numbers.html" class="hover:underline">Adding 2 Numbers</a> |
-            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a>
+            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a> |
+            <a href="/frontend/magic8ball.html" class="hover:underline">Magic 8 Ball</a> |
+            <a href="/frontend/restaurantpicker.html" class="hover:underline">Restaurant Picker</a> |
+            <a href="/frontend/madlib.html" class="hover:underline">Mad-Lib</a>
         </nav>
     </header>
 
-    <h1 class="text-6xl text-center mx-auto">Adding 2 Numbers</h1>
+    <h1 class="text-6xl text-center mx-auto text-shadow-lg">Adding 2 Numbers</h1>
 
     <form id="adding-numbers-form" action="submit" class="text-center p-4 flex flex-col items-center gap-4">
-        <label class="text-3xl">Enter A Number:</label>
+        <label class="text-3xl" for="num1">Enter A Number:</label>
         <input type="number" id="num1" name="num1" class="w-50 border-3 rounded-md p-1 text-2xl" required>
-        <label class="text-3xl">Enter Another Number:</label>
+        <label class="text-3xl" for="num2">Enter Another Number:</label>
         <input type="number" id="num2" name="num2" class="w-50 border-3 rounded-md p-1 text-2xl" required>
         <button type="submit" id="submit-add-numbers" class="w-40 border-3 rounded-md p-1 text-2xl">Add</button>
     </form>

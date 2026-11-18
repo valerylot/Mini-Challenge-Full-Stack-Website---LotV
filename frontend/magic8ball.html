@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-red-300 text-white">
+    <header class="md:text-sm lg:text-lg p-5 text-center">
+        <nav class="lg:flex gap-4 justify-center">
+            <a href="/frontend" class="hover:underline">Home</a> |
+            <a href="/frontend/sayhello.html" class="hover:underline">Say Hello</a> |
+            <a href="/frontend/adding2numbers.html" class="hover:underline">Adding 2 Numbers</a> |
+            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a> |
+            <a href="/frontend/magic8ball.html" class="hover:underline">Magic 8 Ball</a> |
+            <a href="/frontend/restaurantpicker.html" class="hover:underline">Restaurant Picker</a> |
+            <a href="/frontend/madlib.html" class="hover:underline">Mad-Lib</a>
+        </nav>
+    </header>
+
+    <h1 class="text-6xl text-center mx-auto text-shadow-lg">Magic 8 Ball</h1>
+
+    <form id="magic-form" action="submit" class="text-center p-4 mt-10">
+        <label class="text-3xl" for="question">Ask the Magic 8 Ball a question:</label><br>
+        <input type="text" id="question" name="question" class="w-100 border-3 rounded-md p-1 text-2xl mt-3">
+        <button type="submit" id="submit-magic" class="w-50 border-3 rounded-md p-1 text-2xl">Ask Magic 8 Ball</button>
+    </form>
+
+    <p id="magic-output" class="text-3xl text-center"></p>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

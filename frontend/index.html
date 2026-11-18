@@ -7,20 +7,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-red-300 text-white">
-    <header class="p-5">
-        <nav>
+    <header class="md:text-sm lg:text-lg p-5 text-center">
+        <nav class="lg:flex gap-4 justify-center">
             <a href="/frontend" class="hover:underline">Home</a> |
             <a href="/frontend/sayhello.html" class="hover:underline">Say Hello</a> |
             <a href="/frontend/adding2numbers.html" class="hover:underline">Adding 2 Numbers</a> |
-            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a>
+            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a> |
+            <a href="/frontend/magic8ball.html" class="hover:underline">Magic 8 Ball</a> |
+            <a href="/frontend/restaurantpicker.html" class="hover:underline">Restaurant Picker</a> |
+            <a href="/frontend/madlib.html" class="hover:underline">Mad-Lib</a> 
         </nav>
     </header>
 
-    <h1 class="text-6xl text-center mx-auto">Pick A Game</h1>
-    <div class="flex flex-col items-center gap-4 m-4">
+    <h1 class="text-7xl text-center mx-auto text-shadow-lg">Pick A Game</h1>
+    <div class="flex flex-col items-center gap-4 m-6">
     <button id="say-hello-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Say Hello</button>
     <button id="adding-numbers-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Adding 2 Numbers</button>
     <button id="comparing-numbers-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Greater than or Less than</button>
+    <button id="magic-8-ball-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Magic 8 Ball</button>
+    <button id="restaurant-picker-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Restaurant Picker</button>
+    <button id="madlib-button" class="w-100 border-3 rounded-md p-3 text-2xl hover:bg-red-400">Mad Lib</button>
     </div>
 
     <script src="./js/app.js"></script>

@@ -1,3 +1,4 @@
+using api.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
@@ -6,10 +7,19 @@ namespace api.Controllers
     [Route("api/[controller]")]
     public class SayHelloController : ControllerBase
     {
+
+        private readonly ISayHelloServices _sayHelloServices;
+
+        public SayHelloController(ISayHelloServices sayHelloServices)
+        {
+            _sayHelloServices = sayHelloServices;
+        }
+
         [HttpGet("{username}")]
         public IActionResult SayHello(string username)
         {
-            return Ok(new { Message = "Hello " + username });
+            string greeting = _sayHelloServices.SayHello(username);
+            return Ok(new { Message = greeting });
         }
     }
 }

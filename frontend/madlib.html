@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-red-300 text-white">
+    <header class="md:text-sm lg:text-lg p-5 text-center">
+        <nav class="lg:flex gap-4 justify-center">
+            <a href="/frontend" class="hover:underline">Home</a> |
+            <a href="/frontend/sayhello.html" class="hover:underline">Say Hello</a> |
+            <a href="/frontend/adding2numbers.html" class="hover:underline">Adding 2 Numbers</a> |
+            <a href="/frontend/comparing2numbers.html" class="hover:underline">Greater than or Less than</a> |
+            <a href="/frontend/magic8ball.html" class="hover:underline">Magic 8 Ball</a> |
+            <a href="/frontend/restaurantpicker.html" class="hover:underline">Restaurant Picker</a> |
+            <a href="/frontend/madlib.html" class="hover:underline">Mad-Lib</a>
+        </nav>
+    </header>
+
+    <h1 class="text-6xl text-center mx-auto text-shadow-lg">Mad-Lib</h1>
+
+    <form id="madlib-form" action="submit" class="md:text-right md:mr-10 lg:text-right p-4 lg:mr-110">
+        <label class="text-3xl" for="madlib1">Enter an animal:</label>
+        <input type="text" id="madlib1" name="madlib1" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib2">Enter an adjective:</label>
+        <input type="text" id="madlib2" name="madlib2" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib3">Enter an adjective:</label>
+        <input type="text" id="madlib3" name="madlib3" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib4">Enter an adjective:</label>
+        <input type="text" id="madlib4" name="madlib4" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib5">Enter a noun:</label>
+        <input type="text" id="madlib5" name="madlib5" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib6">Enter a noun:</label>
+        <input type="text" id="madlib6" name="madlib6" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib7">Enter an adjective:</label>
+        <input type="text" id="madlib7" name="madlib7" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib8">Enter a type of food:</label>
+        <input type="text" id="madlib8" name="madlib8" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib9">Enter a place:</label>
+        <input type="text" id="madlib9" name="madlib9" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <label class="text-3xl" for="madlib10">Enter an adjective:</label>
+        <input type="text" id="madlib10" name="madlib10" class="w-100 border-3 rounded-md p-1 text-2xl mb-2"><br>
+        <button type="submit" id="submit-madlib" class="w-40 border-3 rounded-md p-1 text-2xl">Submit</button>
+    </form>
+
+    <p id="mad-lib-output" class="text-xl text-center mx-20 my-10"></p>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

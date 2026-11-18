@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using api.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
@@ -7,21 +8,24 @@ namespace api.Controllers
     [Route("api/[controller]")]
     public class ComparisonController : ControllerBase
     {
+        private readonly IComparisonServices _comparisonServices;
+
+        public ComparisonController(IComparisonServices comparisonServices)
+        {
+            _comparisonServices = comparisonServices;
+        }
+
+
         [HttpGet("{numThree}/{numFour}")]
 
         public IActionResult Comparison (int numThree, int numFour)
         {
-            if(numThree > numFour)
+            string[] result = _comparisonServices.Comparison(numThree, numFour);
+            return Ok(new 
             {
-                return Ok( new { Message = $"{numThree} is greater than {numFour}.", Message2 = $"{numFour} is less than {numThree}." });
-            }else if(numThree < numFour)
-            {
-                return Ok( new { Message = $"{numThree} is less than {numFour}.", Messsage2 = $"{numFour} is greater than {numThree}." });
-            }
-            else
-            {
-                return Ok ( new { Message = $"{numThree} is equal to {numFour}.", Message2 = $"{numFour} is equal to {numThree}." });
-            }
+                messageOne = result[0],
+                messageTwo = result[1]
+            });
         }
     }
 }

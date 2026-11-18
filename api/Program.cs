@@ -1,3 +1,5 @@
+using api.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddScoped<IMathServices, MathServices>();
+builder.Services.AddScoped<ISayHelloServices, SayHelloServices>();
+builder.Services.AddScoped<IComparisonServices, ComparisonServices>();
+builder.Services.AddScoped<IMagic8BallServices, Magic8BallServices>();
+builder.Services.AddScoped<IRestaurantPickerServices, RestaurantPickerServices>();
+builder.Services.AddScoped<IMadLibServices, MadLibServices>();
 
 builder.Services.AddCors(options =>
 {
